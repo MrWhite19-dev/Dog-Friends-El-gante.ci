@@ -1,0 +1,267 @@
+
+/* GLOBAL */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#050505;
+color:white;
+}
+
+/* TOPBAR */
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+background:#0f0f0f;
+border-radius:0 0 18px 18px;
+}
+
+.logo img{
+width:110px;
+height:110px;
+object-fit:cover; /* 🔥 important : remplit le cercle */
+border-radius:50%;
+box-shadow:0 0 15px rgba(201,164,92,0.5);
+}
+
+.logo img{
+width:110px;
+height:110px;
+object-fit:cover;
+border-radius:50%;
+box-shadow:0 0 20px rgba(201,164,92,0.6);
+transform: scale(1.05); /* léger zoom */
+transition:0.3s ease;
+}
+
+.logo img:hover{
+transform: scale(1.15); /* zoom au survol */
+}
+
+@media(max-width:768px){
+.logo img{
+width:60px;
+height:60px;
+object-fit:cover;
+}
+}
+nav a{
+color:white;
+margin-left:15px;
+text-decoration:none;
+}
+
+.vip-btn{
+background:#1a0f2e;
+padding:10px 14px;
+border-radius:20px;
+}
+
+/* HERO */
+.hero{
+text-align:center;
+padding:50px 20px;
+background:linear-gradient(120deg,#050505,#0b3d2e,#1a0f2e);
+border-radius:0 0 25px 25px;
+}
+
+/* SECTION */
+.section{
+padding:40px 20px;
+text-align:center;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+/* CARD */
+.card{
+background:#0f0f0f;
+border-radius:20px;
+padding:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+border:1px solid #c9a45c;
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:15px;
+}
+
+/* BUTTONS */
+button{
+margin-top:10px;
+width:100%;
+padding:12px;
+border:none;
+border-radius:25px;
+background:#0b3d2e;
+color:white;
+cursor:pointer;
+}
+
+button:hover{
+opacity:0.8;
+}
+
+/* ORDER */
+.order form{
+max-width:400px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+input, select, textarea{
+padding:12px;
+border:none;
+border-radius:15px;
+background:#0f0f0f;
+color:white;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+background:#0f0f0f;
+margin-top:30px;
+border-radius:20px 20px 0 0;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+nav{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+}
+
+
+
+
+
+/* BODY VIP */
+.vip-body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(
+120deg,
+#050505,
+#0f0f0f,
+#1a0f2e,
+#0b3d2e
+);
+color:white;
+}
+
+/* TOP BAR */
+.vip-topbar{
+display:flex;
+justify-content:space-between;
+padding:18px 20px;
+background:#0f0f0f;
+border-radius:0 0 18px 18px;
+}
+
+.vip-title{
+color:#c9a45c;
+font-weight:bold;
+}
+
+.vip-back{
+color:white;
+text-decoration:none;
+}
+
+/* HERO */
+.vip-hero{
+text-align:center;
+padding:40px 20px;
+}
+
+/* CONTAINER */
+.vip-container{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+padding:20px;
+}
+
+/* CARDS */
+.vip-form-card{
+width:280px;
+padding:20px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+/* VIOLET FORM */
+.violet{
+background:#1a0f2e;
+border:1px solid #3b0f0f;
+}
+
+/* GREEN FORM */
+.green{
+background:#0b3d2e;
+border:1px solid #0f0f0f;
+}
+
+/* INPUT */
+input, select{
+padding:12px;
+border:none;
+border-radius:12px;
+background:#050505;
+color:white;
+outline:none;
+}
+
+/* BUTTON */
+button{
+padding:12px;
+border:none;
+border-radius:12px;
+background:#c9a45c;
+cursor:pointer;
+font-weight:bold;
+}
+
+button:hover{
+opacity:0.8;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.vip-container{
+flex-direction:column;
+align-items:center;
+}
+}
